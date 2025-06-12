@@ -1,0 +1,231 @@
+body {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 40px 10px;
+      color: #333;
+      display: flex;
+      justify-content: center;
+    }
+
+    .container {
+      background: #fff;
+      border-radius: 16px;
+      max-width: 460px;
+      width: 100%;
+      padding: 24px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+    }
+
+    h2 {
+      text-align: center;
+      color: #f45b8b;
+      font-size: 26px;
+      margin-bottom: 30px;
+    }
+
+    .offer-box {
+      border: 1.5px solid #ccc;
+      border-radius: 12px;
+      padding: 16px 20px;
+      margin-bottom: 20px;
+      position: relative;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .offer-box.selected {
+      border-color: #f45b8b;
+      background-color: #fff5f8;
+    }
+
+    .badge {
+      background-color: #f45b8b;
+      color: white;
+      font-size: 11px;
+      padding: 2px 6px;
+      border-radius: 4px;
+      margin-left: 8px;
+    }
+
+    .popular-tag {
+      position: absolute;
+      top: -12px;
+      right: -2px;
+      background-color: #f45b8b;
+      color: #fff;
+      padding: 5px 10px;
+      font-size: 11px;
+      font-weight: bold;
+      border-radius: 0 6px 0 6px;
+    }
+
+    .price {
+      float: right;
+      text-align: right;
+      font-size: 16px;
+    }
+
+    .price del {
+      display: block;
+      color: #bbb;
+      font-size: 13px;
+      margin-top: 2px;
+    }
+
+    .clear {
+      clear: both;
+    }
+
+    .desc {
+      font-size: 13px;
+      margin-top: 4px;
+    }
+
+    input[type="radio"] {
+      margin-right: 10px;
+      accent-color: #f45b8b;
+    }
+
+    .options {
+      display: none;
+      margin-top: 16px;
+    }
+
+    .row {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    .row label {
+      flex: 1;
+      font-size: 13px;
+      font-weight: 500;
+      display: flex;
+      flex-direction: column;
+    }
+
+    select {
+      padding: 6px 10px;
+      width: 30%;
+      height: 36px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      margin-top: 4px;
+      font-size: 13px;
+      background-color: #fff;
+      appearance: none;
+      background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+      background-repeat: no-repeat;
+      background-position: right 10px center;
+      background-size: 12px;
+    }
+
+    .footer {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      font-weight: bold;
+      color: #f45b8b;
+      font-size: 15px;
+      flex-wrap: wrap;
+      row-gap: 6px;
+    }
+
+    .add-to-cart {
+      margin-top: 20px;
+      width: 100%;
+      padding: 14px;
+      background-color: #f45b8b;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    .powered {
+      margin-top: 15px;
+      text-align: center;
+      font-size: 12px;
+      color: #aaa;
+    }
+
+    /* === Responsive Fixes === */
+    @media (max-width: 480px) {
+      body {
+        padding: 20px 8px;
+      }
+
+      .container {
+        padding: 16px;
+        border-radius: 12px;
+      }
+
+      h2 {
+        font-size: 22px;
+        margin-bottom: 20px;
+      }
+
+      .offer-box {
+        padding: 14px 16px;
+      }
+
+      .price {
+        text-align: left;
+        margin-top: 10px;
+        font-size: 14px;
+      }
+
+      .price del {
+        font-size: 12px;
+      }
+
+      .badge {
+        font-size: 10px;
+      }
+
+      .desc {
+        font-size: 12px;
+      }
+
+      .row {
+        gap: 8px;
+        margin-bottom: 16px;
+      }
+
+      /* .row > div,
+      .row select {
+        width: 100% !important;
+      } */
+
+      .row div[style*="width: 25px"] {
+        margin-top: 0;
+      }
+
+      select {
+        font-size: 12px;
+        height: 34px;
+        min-height: 36px;
+        padding: 8px 10px;
+      }
+
+      .popular-tag {
+        font-size: 10px;
+        padding: 4px 8px;
+      }
+
+      .footer {
+        /* flex-direction: column; */
+        align-items: flex-start;
+        font-size: 13px;
+      }
+
+      .add-to-cart {
+        font-size: 15px;
+        padding: 12px;
+        margin-top: 16px;
+      }
+    }
